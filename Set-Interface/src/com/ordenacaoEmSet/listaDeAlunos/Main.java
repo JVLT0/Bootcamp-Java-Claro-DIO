@@ -10,6 +10,7 @@ public class Main {
         gerenciadorAlunos.adicionarAluno("Gustavo", 04, 10);
 
         gerenciadorAlunos.exibirAlunos();
+        gerenciadorAlunos.removerAluno(03);
         gerenciadorAlunos.exibirAlunosPorNome();
         gerenciadorAlunos.exibirAlunosPorNota();
 

@@ -31,11 +31,7 @@ public class ListaDeTarefas {
     }
 
     public void contarTarefas(){
-        int conta = 0;
-        for(Tarefa t: tarefaSet){
-            conta += 1;
-        }
-        System.out.println(conta);
+        System.out.println(tarefaSet.size());
     }
 
     public Set<Tarefa> obterTarefasConcluidas(){

@@ -16,15 +16,7 @@ public class GerenciadorAlunos{
     }
 
     public void removerAluno(long matricula){
-        Set<Aluno> removerAluno = null;
-
-        for(Aluno a: alunoSet){
-            if(a.getMatricula() == matricula){
-                removerAluno.add(a);
-                break;
-            }
-        }
-        alunoSet.remove(removerAluno);
+        alunoSet.removeIf(a -> a.getMatricula() == matricula);
     }
 
     public Set<Aluno> exibirAlunosPorNome(){
